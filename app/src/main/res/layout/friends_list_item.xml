@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/friends_item_bg"
+    android:clipToPadding="false">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friendProfileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="20dp"
+        android:elevation="2dp"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/friendNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/friendProfileImage"
+        android:textColor="@color/DarkText"
+        android:textSize="18sp" />
+</RelativeLayout>

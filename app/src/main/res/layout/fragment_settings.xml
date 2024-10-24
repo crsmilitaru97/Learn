@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context=".SettingsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/settingsAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/settingsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="Settings" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsAppBar"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:layout_marginStart="16dp"
+                android:text="User profile"
+                android:textColor="@color/LightText"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/settingsName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:layout_marginStart="20dp"
+                android:drawableStart="@drawable/ic_profile"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/LightBlue"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/Text"
+                android:textColorHint="@color/LightText"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/settingsEmail"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:layout_marginStart="20dp"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/LightBlue"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/Text"
+                android:textColorHint="@color/LightText"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/settingsLayoutPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/settingsPassword"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/LightBlue"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/Text"
+                    android:textColorHint="@color/LightText"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/settingsEyeButton"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-60dp"
+                    android:src="@drawable/ic_eye" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/settingsCountry"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:layout_marginStart="20dp"
+                android:drawableStart="@drawable/ic_country"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/LightBlue"
+                android:hint="Country"
+                android:inputType="text"
+                android:textColor="@color/Text"
+                android:textColorHint="@color/LightText"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/settingsProfession"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:layout_marginStart="20dp"
+                android:drawableStart="@drawable/ic_profession"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/LightBlue"
+                android:hint="Profession"
+                android:inputType="text"
+                android:textColor="@color/Text"
+                android:textColorHint="@color/LightText"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/settingsSwitchPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginStart="20dp"
+                android:text="Private Account"
+                android:textColor="@color/Text"
+                android:textSize="14sp"
+                android:thumbTint="@color/LightBlue" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/settingsProfileImage"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="14dp"
+                android:elevation="2dp"
+                android:src="@drawable/avatar" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/settingsSaveButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/Text" />
+</RelativeLayout>

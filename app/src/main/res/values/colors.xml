@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="input">#2AFFFFFF</color>
+    <color name="btn">#3AFFFFFF</color>
+    <color name="btnDark">#4AFFFFFF</color>
+
+    <color name="White">#FFFFFF</color>
+    <color name="White65">#A6FFFFFF</color>
+    <color name="LightGray">#f4f4f4</color>
+    <color name="Black">#CCCCCC</color>
+    <color name="LightRed">#ff8888</color>
+
+    <color name="UltraLightText">#cccccc</color>
+    <color name="LightText">#999999</color>
+    <color name="Text">#666666</color>
+    <color name="DarkText">#323232</color>
+
+    <color name="UltraLightBlue">#66aeff</color>
+    <color name="LightBlue">#3293ff</color>
+    <color name="Blue">#0078FF</color>
+    <color name="DarkBlue">#0060cc</color>
+</resources>

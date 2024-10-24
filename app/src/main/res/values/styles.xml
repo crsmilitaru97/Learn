@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="AppCompatTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/Blue</item>
+        <item name="colorPrimaryDark">@color/DarkBlue</item>
+        <item name="colorAccent">@color/Blue</item>
+    </style>
+
+    <style name="Profile.TextAppearance.Title.Expanded" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="AppCompatTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="WhiteAccent">
+        <item name="colorAccent">@color/White</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="AppCompatTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppCompatTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
